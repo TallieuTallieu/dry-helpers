@@ -1,18 +1,18 @@
 <?php
 
-namespace Tnt\Helpers\Console\Media;
+namespace Tnt\Helpers\Console\Newsletter;
 
 use Oak\Console\Command\Command;
 use Oak\Console\Command\Signature;
 
-class Media extends Command
+class Newsletter extends Command
 {
 	protected function createSignature(Signature $signature): Signature
 	{
 		return $signature
-			->setName('media')
-			->addSubCommand(new SanityCheck())
-			->addSubCommand(new Clear())
+			->setName('newsletter')
+			->addSubCommand(new Subscribe())
+			->addSubCommand(new Status())
 			;
 	}
 }
