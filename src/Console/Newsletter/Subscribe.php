@@ -11,21 +11,21 @@ use Oak\Contracts\Console\OutputInterface;
 
 class Subscribe extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('subscribe')
-			->setDescription('Creates a new newsletter subscriber')
-			->addArgument(Argument::create('email')->setDescription('Email address for the subscriber'))
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('subscribe')
+            ->setDescription('Creates a new newsletter subscriber')
+            ->addArgument(Argument::create('email')->setDescription('Email address for the subscriber'))
+            ;
+    }
 
-	protected function execute(InputInterface $input, OutputInterface $output)
-	{
-		$subscriber = new Subscriber();
-		$subscriber->email = $input->getArgument('email');
-		$subscriber->save();
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $subscriber = new Subscriber();
+        $subscriber->email = $input->getArgument('email');
+        $subscriber->save();
 
-		$output->writeLine('Subscriber successfully created');
-	}
+        $output->writeLine('Subscriber successfully created');
+    }
 }

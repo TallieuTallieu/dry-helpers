@@ -7,36 +7,49 @@ use Oak\Console\Command\Command;
 use Oak\Console\Command\Signature;
 use Oak\Contracts\Console\InputInterface;
 use Oak\Contracts\Console\OutputInterface;
+use Oak\Contracts\Container\ContainerInterface;
+use Tnt\ConsoleTable\Table;
 
 class ListChannels extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('list-channels')
-			->setDescription('Lists all email channels for this application')
-			;
-	}
+    /**
+     * @var Table $table
+     */
+    private $table;
 
-	protected function execute(InputInterface $input, OutputInterface $output)
-	{
-		$output->writeLine(
-			str_pad('HID', 35).
-			str_pad('FROM EMAIL', 35).
-			str_pad('FROM NAME', 35).
-			'RECIPIENTS'
-		, OutputInterface::TYPE_INFO);
+    /**
+     * ListChannels constructor.
+     * @param ContainerInterface $app
+     * @param Table $table
+     */
+    public function __construct(ContainerInterface $app, Table $table)
+    {
+        $this->table = $table;
+        parent::__construct($app);
+    }
 
-		foreach (Channel::all() as $channel) {
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('list-channels')
+            ->setDescription('Lists all email channels for this application')
+            ;
+    }
 
-			$recipients = $channel->recipients ? $channel->recipients : [];
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $this->table->setHeaders(['Hid', 'From email', 'From name', 'Recipients']);
 
-			$output->writeLine(
-				str_pad($channel->hid, 35).
-				str_pad($channel->from_email, 35).
-				str_pad($channel->from_name, 35).
-				implode(', ', $recipients)
-			);
-		}
-	}
+        foreach (Channel::all() as $channel) {
+
+            $recipients = $channel->recipients ? $channel->recipients : [];
+
+            $this->table->addRow([
+                $channel->hid,
+                $channel->from_email,
+                $channel->from_name,
+                implode(', ', $recipients),
+            ]);
+        }
+    }
 }

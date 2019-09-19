@@ -7,11 +7,11 @@ use Oak\Console\Command\Signature;
 
 class Template extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('template')
-			->addSubCommand(new ClearCache())
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('template')
+            ->addSubCommand(ClearCache::class)
+            ;
+    }
 }

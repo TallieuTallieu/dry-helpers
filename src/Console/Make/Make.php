@@ -7,11 +7,11 @@ use Oak\Console\Command\Signature;
 
 class Make extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('make')
-			->addSubCommand(new Model())
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('make')
+            ->addSubCommand(Model::class)
+        ;
+    }
 }

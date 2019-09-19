@@ -9,16 +9,16 @@ use Oak\Contracts\Console\OutputInterface;
 
 class Status extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('status')
-			->setDescription('Show the status of the newsletter system')
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('status')
+            ->setDescription('Show the status of the newsletter system')
+            ;
+    }
 
-	protected function execute(InputInterface $input, OutputInterface $output)
-	{
-		$output->writeLine('TODO');
-	}
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $output->writeLine('TODO');
+    }
 }

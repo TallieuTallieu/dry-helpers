@@ -7,12 +7,12 @@ use Oak\Console\Command\Signature;
 
 class Media extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('media')
-			->addSubCommand(new SanityCheck())
-			->addSubCommand(new Clear())
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('media')
+            ->addSubCommand(SanityCheck::class)
+            ->addSubCommand(Clear::class)
+            ;
+    }
 }
