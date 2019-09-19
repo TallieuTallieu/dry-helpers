@@ -9,7 +9,9 @@
       "email": "reinvanoyen@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "reinvanoyen/oak": "^1.0.0"
+  },
   "autoload": {
     "psr-4": {
       "Tnt\\Helpers\\": "src/"
