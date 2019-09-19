@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "reinvanoyen/oak": "^1.0.0"
+    "reinvanoyen/oak": "^1.0.0",
+    "reinvanoyen/oak-console-table": "^1.0.0"
   },
   "autoload": {
     "psr-4": {
