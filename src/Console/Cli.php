@@ -18,8 +18,7 @@ class Cli extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        while( TRUE )
-        {
+        while( TRUE ) {
             echo '> ';
             $input = \readline();
             eval( $input );
