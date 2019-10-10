@@ -1,5 +1,6 @@
 {
   "name": "reinvanoyen/dry-helpers",
+  "minimum-stability": "dev",
   "description": "CLI helpers for DRY",
   "keywords": ["commandline", "cli", "commands", "helpers", "dry"],
   "type": "library",
