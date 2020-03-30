@@ -1,0 +1,46 @@
+h1.primary-title
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 900;
+
+    color: #4e4e4e;
+}
+
+h2.secondary-title
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #4e4e4e;
+}
+
+h3.tertiary-title
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 22px;
+
+    color: #4e4e4e;
+}
+
+column.title-decorate
+{
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #4e4e4e;
+}

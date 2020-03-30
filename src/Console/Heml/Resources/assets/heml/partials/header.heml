@@ -1,0 +1,43 @@
+<block class="header">
+	<row>
+		<column small="9">
+			<button class="header-logo" href="{{ \dry\abs_url() }}" title="{{ \dry\Settings::get( 'website_title' ) }}" target="_blank">
+				<img src="{{ \dry\abs_url( 'assets/heml/img/logo.png' ) }}" alt="{{ \dry\Settings::get( 'website_title' ) }}" width="175" height="59" />
+			</button>
+		</column>
+		<column class="header__column" large="3" small="3">
+			<row>
+				<column small="4">
+					<a class="social-item" href="{{ \dry\abs_url() }}" title="{{ \dry\Settings::get('website_title') }} website" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} website" width="25" height="25" />
+					</a>
+				</column>
+				<column small="4">
+					<a class="social-item" href="mailto:{{ \dry\Settings::get('contact_email') }}" title="Mail naar {{ \dry\Settings::get('contact_email') }}" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="Mail naar {{ \dry\Settings::get('website_title') }}" width="25" height="25" />
+					</a>
+				</column>
+				<column small="4">
+					<a class="social-item" href="{{ \dry\Settings::get( 'facebook_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Facebook" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png') }}" alt="{{ \dry\Settings::get('website_title') }} op Facebook" width="25" height="25" />
+					</a>
+				</column>
+				<column small="4">
+					<a class="social-item" href="{{ \dry\Settings::get( 'linkedin_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Linkedin" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Linkedin" width="25" height="25" />
+					</a>
+				</column>
+				<column small="4">
+					<a class="social-item" href="{{ \dry\Settings::get( 'pinterest_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Pinterest" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Pinterest" width="25" height="25" />
+					</a>
+				</column>
+				<column small="4">
+					<a class="social-item" href="{{ \dry\Settings::get( 'instagram_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Instagram" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Instagram" width="25" height="25" />
+					</a>
+				</column>
+			</row>
+		</column>
+	</row>
+</block>

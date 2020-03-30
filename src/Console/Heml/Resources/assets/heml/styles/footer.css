@@ -1,0 +1,29 @@
+block.footer
+{
+    padding: 0 50px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 650px)
+{
+    block.footer
+    {
+        padding: 0 10px !important;
+    }
+}
+
+column.footer__header
+{
+    padding-bottom: 15px;
+}
+
+button.footer-logo
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}

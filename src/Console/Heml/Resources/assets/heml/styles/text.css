@@ -1,0 +1,28 @@
+p.text
+{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p.text:last-child
+{
+    margin-bottom: 0;
+}
+
+p.text--small
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+p.text--medium
+{
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.text--uppercase
+{
+    text-transform: uppercase;
+}

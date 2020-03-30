@@ -1,0 +1,32 @@
+<!-- Block Text - Photo -->
+<block class="content-block">
+	<row>
+		<column class="content-block__column">
+			{% if @@cta_url %}
+				<a href="{{ @@url }}" title="{{ @@title }}" target="_blank">
+			{% /if %}
+				<img src="{{ \dry\abs_url(@@src) }}" alt="{{ @@title }}" title="{{ @@title }}" width="335" />
+			{% if @@cta_url %}
+				</a>
+			{% /if %}
+		</column>
+		<column class="content-block__column">
+			<row>
+				<column class="content-block__content">
+					{% if @@title %}
+						@@include('../partials/tertiary-title.heml', {
+							"title": "@@title"
+						})
+					{% /if %}
+					{{ r: @@body }}
+					{% if @@cta_title && @@cta_url %}
+						@@include('../partials/button.heml', {
+							"title": "@@cta_title",
+							"url": "@@cta_url"
+						})
+					{% /if %}
+				</column>
+			</row>
+		</column>
+	</row>
+</block>

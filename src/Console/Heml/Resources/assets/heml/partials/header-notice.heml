@@ -1,0 +1,7 @@
+<row>
+    <column class="header-notice">
+        <p class="text text--small">
+            <a href="%NEWSLETTER_URL%" target="_blank">Click here to view the online version</a>
+        </p>
+    </column>
+</row>

@@ -1,0 +1,38 @@
+{% literal %}
+	<head>
+		{% /literal %}
+			<subject>Project title</subject>
+			<preview>{{ isset( $preview_text ) ? $preview_text : '' }}</preview>
+		{% literal %}
+		<style heml-embed>
+			a,
+			a:link,
+			a:visited,
+			a:focus,
+			a:active
+			{
+				color: #000000;
+				text-decoration: underline;
+			}
+
+			p:first-child
+			{
+				margin-top: 0;
+			}
+
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+		<style>
+			@@include('../styles/general.css')
+			@@include('../styles/typography.css')
+			@@include('../styles/links.css')
+			@@include('../styles/text.css')
+			@@include('../styles/buttons.css')
+			@@include('../styles/header-notice.css')
+			@@include('../styles/header.css')
+			@@include('../styles/footer.css')
+			@@include('../styles/content-block.css')
+			@@include('../styles/divider.css')
+		</style>
+	</head>
+{% /literal %}

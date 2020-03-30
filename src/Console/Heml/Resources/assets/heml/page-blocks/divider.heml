@@ -1,0 +1,4 @@
+<!-- Divider -->
+<block class="content-block">
+	@@include('../partials/divider.heml')
+</block>

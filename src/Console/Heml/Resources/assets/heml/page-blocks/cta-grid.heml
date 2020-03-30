@@ -1,0 +1,33 @@
+<block class="content-block">
+	<row>
+
+		<column class="content-block__column content-block__column--three" small="4">
+			@@include('../partials/button.heml', {
+				"title": "@@title_01",
+				"url": "@@url_01",
+				"large": "true"
+			})
+		</column>
+
+		{% if @@title_02 && @@url_02 %}
+			<column class="content-block__column content-block__column--three" small="4">
+				@@include('../partials/button.heml', {
+					"title": "@@title_02",
+					"url": "@@url_02",
+					"large": "true"
+				})
+			</column>
+		{% /if %}
+
+		{% if @@title_03 && @@url_03 %}
+			<column class="content-block__column content-block__column--three" small="4">
+				@@include('../partials/button.heml', {
+					"title": "@@title_03",
+					"url": "@@url_03",
+					"large": "true"
+				})
+			</column>
+		{% /if %}
+
+	</row>
+</block>

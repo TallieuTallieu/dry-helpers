@@ -1,0 +1,23 @@
+{% if @@center !== 'center' && @@center %}
+	<button href="{{ @@url }}" class="button--center" target="_blank">
+		{{ @@title }}
+
+		<span class="button__icon">
+			<img src="{{ \dry\abs_url( 'assets/heml/img/arrow.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} website" width="5" height="8" />
+		</span>
+	</button>
+
+{% elseif @@large !== 'large' && @@large %}
+	<button href="{{ @@url }}" class="button--large" target="_blank">
+		{{ @@title }}
+	</button>
+
+{% else %}
+	<button href="{{ @@url }}" target="_blank">
+		{{ @@title }}
+
+		<span class="button__icon">
+			<img src="{{ \dry\abs_url( 'assets/heml/img/arrow.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} website" width="5" height="8" />
+		</span>
+	</button>
+{% /if %}

@@ -1,0 +1,16 @@
+column.header-notice
+{
+    padding-bottom: 20px;
+    color: #4e4e4e;
+}
+
+column.header-notice p
+{
+    text-align: center;
+}
+
+column.header-notice a
+{
+    border-bottom: none;
+    color: #4e4e4e;
+}

@@ -1,0 +1,36 @@
+<!-- Block Photo grid -->
+<block class="content-block">
+	<row>
+
+		<column class="content-block__column content-block__column--three" small="4">
+			{% if @@url_01 %}
+				<a href="{{ @@url_01 }}" target="_blank">
+			{% /if %}
+				<img src="{{ \dry\abs_url(@@src_01) }}" width="236" />
+			{% if @@url_01 %}
+				</a>
+			{% /if %}
+		</column>
+
+		<column class="content-block__column content-block__column--three" small="4">
+			{% if @@url_02 %}
+				<a href="{{ @@url_02 }}" target="_blank">
+			{% /if %}
+				<img src="{{ \dry\abs_url(@@src_02) }}" width="236" />
+			{% if @@url_02 %}
+				</a>
+			{% /if %}
+		</column>
+
+		<column class="content-block__column content-block__column--three" small="4">
+			{% if @@url_03 %}
+				<a href="{{ @@url_03 }}" target="_blank">
+			{% /if %}
+				<img src="{{ \dry\abs_url(@@src_03) }}" width="236" />
+			{% if @@url_03 %}
+				</a>
+			{% /if %}
+		</column>
+
+	</row>
+</block>

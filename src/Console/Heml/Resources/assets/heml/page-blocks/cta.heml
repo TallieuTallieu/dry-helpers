@@ -1,0 +1,8 @@
+<!-- Block Button -->
+<block class="content-block">
+	@@include('../partials/button.heml', {
+		"title": "@@title",
+		"url": "@@url",
+		"center": "true"
+	})
+</block>

@@ -1,0 +1,72 @@
+<heml>
+	@@include('partials/head.heml')
+	<body>
+	<container>
+		<row>
+			<column>
+
+				@@include('partials/header-notice.heml')
+				@@include('partials/header.heml')
+
+				@@include('page-blocks/photo.heml', {
+					"title": "'My photo title'",
+					"url": "'http://www.google.com'",
+					"src": "'assets/heml/img/dummy-01.jpg'"
+				})
+
+				@@include('page-blocks/text.heml', {
+					"suptitle": "'Onze nieuwsbrief in een nieuw jasje'",
+					"title": "'Nieuwe website online'",
+					"body": "'When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchang.'",
+					"cta_title": "'Button'",
+					"cta_url": "'http://www.google.com'"
+				})
+
+				@@include('page-blocks/divider.heml')
+
+				@@include('page-blocks/photo-text.heml', {
+					"src": "'assets/heml/img/dummy-01.jpg'",
+					"title": "'What is Lorem Ipsum?'",
+					"body": "'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries'",
+					"cta_title": "'Button'",
+					"cta_url": "'http://www.google.com'"
+				})
+
+				@@include('page-blocks/text-photo.heml', {
+					"src": "'assets/heml/img/dummy-01.jpg'",
+					"title": "'What is Lorem Ipsum?'",
+					"body": "'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries'",
+					"cta_title": "'Button'",
+					"cta_url": "'http://www.google.com'"
+				})
+
+				@@include('page-blocks/cta.heml', {
+					"title": "'Lorem Ipsum is simply'",
+					"url": "'http://www.google.com'"
+				})
+
+				@@include('page-blocks/photo-grid.heml', {
+					"url_01": "'http://www.google.com'",
+					"src_01": "'assets/heml/img/dummy-01.jpg'",
+					"url_02": "'http://www.google.com'",
+					"src_02": "'assets/heml/img/dummy-01.jpg'",
+					"url_03": "'http://www.google.com'",
+					"src_03": "'assets/heml/img/dummy-01.jpg'"
+				})
+
+				@@include('page-blocks/cta-grid.heml', {
+					"title_01": "'Where does it?'",
+					"url_01": "'http://www.google.com'",
+					"title_02": "'Where can I get some?'",
+					"url_02": "'http://www.google.com'",
+					"title_03": "'Why do we use it?'",
+					"url_03": "'http://www.google.com'"
+				})
+
+				@@include('partials/footer.heml')
+
+			</column>
+		</row>
+	</container>
+	</body>
+</heml>

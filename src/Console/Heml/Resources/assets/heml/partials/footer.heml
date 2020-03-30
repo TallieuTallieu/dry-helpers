@@ -1,0 +1,63 @@
+<block class="footer">
+	<row>
+		<column class="footer__header">
+			<row>
+				<column small="9">
+					<button class="footer-logo" href="{{ \dry\abs_url() }}" title="{{ \dry\Settings::get( 'website_title' ) }}" target="_blank">
+						<img src="{{ \dry\abs_url( 'assets/heml/img/logo.png' ) }}" alt="{{ \dry\Settings::get( 'website_title' ) }}" width="120" height="44"/>
+					</button>
+				</column>
+				<column class="header__column" large="3" small="3">
+					<row>
+						<column small="4">
+							<a class="social-item" href="{{ \dry\abs_url() }}" title="{{ \dry\Settings::get('website_title') }} website" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} website" width="25" height="25" />
+							</a>
+						</column>
+						<column small="4">
+							<a class="social-item" href="mailto:{{ \dry\Settings::get('contact_email') }}" title="Mail naar {{ \dry\Settings::get('contact_email') }}" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="Mail naar {{ \dry\Settings::get('website_title') }}" width="25" height="25" />
+							</a>
+						</column>
+						<column small="4">
+							<a class="social-item" href="{{ \dry\Settings::get( 'facebook_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Facebook" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Facebook" width="25" height="25" />
+							</a>
+						</column>
+						<column small="4">
+							<a class="social-item" href="{{ \dry\Settings::get( 'linkedin_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Linkedin" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Linkedin" width="25" height="25" />
+							</a>
+						</column>
+						<column small="4">
+							<a class="social-item" href="{{ \dry\Settings::get( 'pinterest_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Pinterest" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Pinterest" width="25" height="25" />
+							</a>
+						</column>
+						<column small="4">
+							<a class="social-item" href="{{ \dry\Settings::get( 'instagram_url' ) }}" title="{{ \dry\Settings::get('website_title') }} op Instagram" target="_blank">
+								<img src="{{ \dry\abs_url( 'assets/heml/img/link.png' ) }}" alt="{{ \dry\Settings::get('website_title') }} op Instagram" width="25" height="25" />
+							</a>
+						</column>
+					</row>
+				</column>
+			</row>
+		</column>
+	</row>
+	<row>
+		<column large="2">&nbsp;</column>
+		<column>
+			<block class="content-block">
+				<p class="text--small">
+					You are subscribed as <a class="plain-link" href="mailto:%EMAIL%">%EMAIL%</a>.<br/>
+					<a href="%UNSUB_URL%" title="Click here to unsubscribe from our mailing list" target="_blank">Unsubscribe</a> from our mailing list.<br/>
+					<a href="%NEWSLETTER_URL%" title="Click here to view the online version">View</a> the online version.<br/>
+				</p>
+				<p class="text--small">
+					&copy; {{ \dry\Settings::get( 'website_title' ) }} {{ date( 'Y' ) }} - Belgium<br/>
+					E-mailing by <a href="https://www.tnt.be" title="Website & E-mailing by Tallieu & Tallieu" target="_blank">Tallieu & Tallieu</a>
+				</p>
+			</block>
+		</column>
+	</row>
+</block>

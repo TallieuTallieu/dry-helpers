@@ -1,0 +1,14 @@
+a.social-item
+{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 650px)
+{
+    a.social-item
+    {
+        margin-bottom: 5px !important;
+    }
+}

@@ -1,0 +1,23 @@
+a,
+a span
+{
+    color: #000000;
+}
+
+a.dim
+{
+    color: #4e4e4e;
+}
+
+a.plain-link,
+a.plain-link span
+{
+    border: 0;
+    text-decoration: none;
+}
+
+a.plain-link--dim,
+a.plain-link--dim span
+{
+    color: #4e4e4e;
+}

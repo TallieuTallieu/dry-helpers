@@ -1,0 +1,14 @@
+<!-- Block Photo -->
+<block class="content-block">
+
+	{% if @@url %}
+		<a href="{{ @@url }}" title="{{ @@title }}" target="_blank">
+	{% /if %}
+
+	<img src="{{ \dry\abs_url(@@src) }}" width="720" alt="{{ @@title }}"/>
+
+	{% if @@url %}
+		</a>
+	{% /if %}
+
+</block>

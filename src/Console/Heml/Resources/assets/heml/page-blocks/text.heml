@@ -1,0 +1,33 @@
+<!-- Block Text -->
+<block class="content-block content-block--narrow">
+	{% if @@suptitle %}
+		<row>
+			<column class="content-block__header">
+				@@include('../partials/subtitle.heml', {
+					"title": "@@suptitle"
+				})
+			</column>
+		</row>
+	{% /if %}
+	{% if trim(@@body) || @@title || (@@cta_title && @@cta_url) %}
+		<row>
+			<column class="content-block__content">
+				{% if @@title %}
+					@@include('../partials/title.heml', {
+						"title": "@@title",
+						"decorate": "true"
+					})
+				{% /if %}
+				{% if trim(@@body) %}
+					{{ r: @@body }}
+				{% /if %}
+				{% if @@cta_title && @@cta_url %}
+					@@include('../partials/button.heml', {
+						"title": "@@cta_title",
+						"url": "@@cta_url"
+					})
+				{% /if %}
+			</column>
+		</row>
+	{% /if %}
+</block>

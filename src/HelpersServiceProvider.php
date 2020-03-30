@@ -7,6 +7,7 @@ use Oak\Contracts\Container\ContainerInterface;
 use Oak\ServiceProvider;
 use Tnt\Helpers\Console\Cli;
 use Tnt\Helpers\Console\Email\Email;
+use Tnt\Helpers\Console\Heml\Heml;
 use Tnt\Helpers\Console\Newsletter\Newsletter;
 use Tnt\Helpers\Console\Make\Make;
 use Tnt\Helpers\Console\Media\Media;
@@ -25,6 +26,7 @@ class HelpersServiceProvider extends ServiceProvider
             Console::registerCommand(Newsletter::class);
             Console::registerCommand(Router::class);
             Console::registerCommand(Template::class);
+            Console::registerCommand(Heml::class);
         }
     }
 
@@ -38,6 +40,7 @@ class HelpersServiceProvider extends ServiceProvider
             $app->set(Newsletter::class, Newsletter::class);
             $app->set(Router::class, Router::class);
             $app->set(Template::class, Template::class);
+            $app->set(Heml::class, Heml::class);
         }
     }
 }
