@@ -4,5 +4,5 @@
 #### Installation
 
 ```ssh
-composer require reinvanoyen/dry-helpers
+composer require tallieutallieu/dry-helpers
 ```
