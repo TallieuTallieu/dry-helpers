@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "tallieutallieu/oak": "^1.0.0@dev-*",
+    "tallieutallieu/oak": "^1.0.0@dev-php8.2",
     "tallieutallieu/oak-console-table": "^1.0.0"
   },
   "autoload": {
